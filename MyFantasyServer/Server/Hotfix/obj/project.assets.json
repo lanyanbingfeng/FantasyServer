@@ -31,7 +31,7 @@
           }
         }
       },
-      "Fantasy-Net/2025.2.1408": {
+      "Fantasy-Net/2025.2.1410": {
         "type": "package",
         "dependencies": {
           "CommandLineParser": "2.9.1",
@@ -372,7 +372,7 @@
           }
         }
       },
-      "Fantasy-Net/2025.2.1408": {
+      "Fantasy-Net/2025.2.1410": {
         "type": "package",
         "dependencies": {
           "CommandLineParser": "2.9.1",
@@ -714,10 +714,10 @@
         "lib/netstandard2.1/DnsClient.xml"
       ]
     },
-    "Fantasy-Net/2025.2.1408": {
-      "sha512": "JT+UBh/sssDrHmoVSrYYhpC6R+iF0ZrjVlOtbXte4+BUbkLE/XdMgTkA350kAC1s9fuSaoQXEhT0KanPpBMF8g==",
+    "Fantasy-Net/2025.2.1410": {
+      "sha512": "J+2WboMkTMWGPQDKoUv+YE65wjvsTqTyL8iD1yiJhCOACxRwDeCArI27wOh5UjPNKPhJRP05ZIiab2xuG+oPSA==",
       "type": "package",
-      "path": "fantasy-net/2025.2.1408",
+      "path": "fantasy-net/2025.2.1410",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -739,7 +739,7 @@
         "buildTransitive/modules/CopyTemplate.targets",
         "buildTransitive/modules/CopyToOutput.targets",
         "buildTransitive/modules/DefineConstants.targets",
-        "fantasy-net.2025.2.1408.nupkg.sha512",
+        "fantasy-net.2025.2.1410.nupkg.sha512",
         "fantasy-net.nuspec",
         "icon.png",
         "lib/net8.0/Fantasy-Net.dll",
@@ -1259,20 +1259,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ZhuanZ\\.nuget\\packages\\": {}
+    "C:\\Users\\wzy\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ZhuanZ\\Desktop\\FantasyServer\\MyFantasyServer\\Server\\Hotfix\\Hotfix.csproj",
+      "projectUniqueName": "C:\\Users\\wzy\\Desktop\\FantasyServer\\MyFantasyServer\\Server\\Hotfix\\Hotfix.csproj",
       "projectName": "Hotfix",
-      "projectPath": "C:\\Users\\ZhuanZ\\Desktop\\FantasyServer\\MyFantasyServer\\Server\\Hotfix\\Hotfix.csproj",
-      "packagesPath": "C:\\Users\\ZhuanZ\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ZhuanZ\\Desktop\\FantasyServer\\MyFantasyServer\\Server\\Hotfix\\obj\\",
+      "projectPath": "C:\\Users\\wzy\\Desktop\\FantasyServer\\MyFantasyServer\\Server\\Hotfix\\Hotfix.csproj",
+      "packagesPath": "C:\\Users\\wzy\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\wzy\\Desktop\\FantasyServer\\MyFantasyServer\\Server\\Hotfix\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "configFilePaths": [
-        "C:\\Users\\ZhuanZ\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\wzy\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0",
@@ -1285,16 +1285,16 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\ZhuanZ\\Desktop\\FantasyServer\\MyFantasyServer\\Server\\Entity\\Entity.csproj": {
-              "projectPath": "C:\\Users\\ZhuanZ\\Desktop\\FantasyServer\\MyFantasyServer\\Server\\Entity\\Entity.csproj"
+            "C:\\Users\\wzy\\Desktop\\FantasyServer\\MyFantasyServer\\Server\\Entity\\Entity.csproj": {
+              "projectPath": "C:\\Users\\wzy\\Desktop\\FantasyServer\\MyFantasyServer\\Server\\Entity\\Entity.csproj"
             }
           }
         },
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "C:\\Users\\ZhuanZ\\Desktop\\FantasyServer\\MyFantasyServer\\Server\\Entity\\Entity.csproj": {
-              "projectPath": "C:\\Users\\ZhuanZ\\Desktop\\FantasyServer\\MyFantasyServer\\Server\\Entity\\Entity.csproj"
+            "C:\\Users\\wzy\\Desktop\\FantasyServer\\MyFantasyServer\\Server\\Entity\\Entity.csproj": {
+              "projectPath": "C:\\Users\\wzy\\Desktop\\FantasyServer\\MyFantasyServer\\Server\\Entity\\Entity.csproj"
             }
           }
         }

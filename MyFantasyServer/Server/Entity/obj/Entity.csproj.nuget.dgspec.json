@@ -1,21 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ZhuanZ\\Desktop\\FantasyServer\\MyFantasyServer\\Server\\Entity\\Entity.csproj": {}
+    "C:\\Users\\wzy\\Desktop\\FantasyServer\\MyFantasyServer\\Server\\Entity\\Entity.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ZhuanZ\\Desktop\\FantasyServer\\MyFantasyServer\\Server\\Entity\\Entity.csproj": {
+    "C:\\Users\\wzy\\Desktop\\FantasyServer\\MyFantasyServer\\Server\\Entity\\Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ZhuanZ\\Desktop\\FantasyServer\\MyFantasyServer\\Server\\Entity\\Entity.csproj",
+        "projectUniqueName": "C:\\Users\\wzy\\Desktop\\FantasyServer\\MyFantasyServer\\Server\\Entity\\Entity.csproj",
         "projectName": "Entity",
-        "projectPath": "C:\\Users\\ZhuanZ\\Desktop\\FantasyServer\\MyFantasyServer\\Server\\Entity\\Entity.csproj",
-        "packagesPath": "C:\\Users\\ZhuanZ\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ZhuanZ\\Desktop\\FantasyServer\\MyFantasyServer\\Server\\Entity\\obj\\",
+        "projectPath": "C:\\Users\\wzy\\Desktop\\FantasyServer\\MyFantasyServer\\Server\\Entity\\Entity.csproj",
+        "packagesPath": "C:\\Users\\wzy\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\wzy\\Desktop\\FantasyServer\\MyFantasyServer\\Server\\Entity\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "configFilePaths": [
-          "C:\\Users\\ZhuanZ\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\wzy\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0",

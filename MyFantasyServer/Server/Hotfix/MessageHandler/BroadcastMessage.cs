@@ -1,5 +1,6 @@
 
 using Fantasy;
+using Fantasy.Entitas;
 using Fantasy.Network;
 using Fantasy.Network.Interface;
 
@@ -7,12 +8,21 @@ namespace Hotfix.MessageHandler;
 
 public class BroadcastMessage
 {
-    public static int ClientIdNum = 0;
-    public static readonly Dictionary<int,ClientObject> ClientDic = new();
+    private const int ClientLength = 100;
+    public static readonly Dictionary<int,ClientObject?> ClientDic = new();
+    public static readonly HashSet<Session> ClientHashSet = [];
+
+    public static void Init()
+    {
+        for (int i = 0; i < ClientLength; i++)
+        {
+            ClientDic.Add(i,null);
+        }
+    }
 
     public static void Broadcast(IMessage message)
     {
-        foreach (var client in ClientDic.Values) client.Session.Send(message);
+        foreach (var client in ClientHashSet) client.Send(message);
     }
     /// <summary>
     /// 忽略一个客户端的广播
@@ -21,41 +31,29 @@ public class BroadcastMessage
     /// <param name="session"></param>
     public static void Broadcast(IMessage message,Session session)
     {
-        foreach (var client in ClientDic.Values)
+        foreach (var client in ClientHashSet)
         {
-            if (client.Session == session) continue;
-            client.Session.Send(message);
+            if (client == session) continue;
+            client.Send(message);
         }
     }
     
     public static void AddSession(Session session,ClientData data)
     {
-        ClientIdNum++;
-        ClientObject client = new ClientObject(session, ClientIdNum,data.Name);
-        ClientDic.Add(ClientIdNum,client);
-    }
-
-    public static async void ListenClientDisConnect()
-    {
-        while (true)
+        ClientObject client = Entity.Create<ClientObject>(session.Scene);
+        ClientHashSet.Add(session);
+        for (int i = 0; i < ClientLength; i++)
         {
-            await Task.Delay(1000);
-            foreach (var clientDicKey in ClientDic.Keys)
-            {
-                if (ClientDic[clientDicKey].Session.IsDisposed)
-                {
-                    Broadcast(new OrdinaryMessage{Tag = $"玩家 {ClientDic[clientDicKey].Name} 退出世界"});
-                    Broadcast(new DelectPlayerPrefabMessage{id = ClientDic[clientDicKey].ID});
-                    Console.WriteLine($"玩家 {ClientDic[clientDicKey].Name} 退出世界");
-                    ClientIdNum--;
-                    ClientDic.Remove(clientDicKey);
-                }
-            }
+            if (ClientDic[i] != null) continue;
+            client.Init(session, i,data.Name);
+            ClientDic[i] = client;
+            session.AddComponent(client);
+            break;
         }
     }
 
     public static void UpdateClientData(ClientData data)
     {
-        ClientDic[data.ID].Position = data.Position;
+        ClientDic[data.ID]?.UpdateData(data);
     }
 }

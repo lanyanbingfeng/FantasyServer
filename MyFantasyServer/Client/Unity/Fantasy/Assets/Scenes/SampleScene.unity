@@ -356,7 +356,7 @@ MonoBehaviour:
   runtimeName: FantasyRuntime
   remoteIP: 192.168.31.193
   remotePort: 20000
-  protocol: 0
+  protocol: 1
   enableHttps: 0
   connectTimeout: 5000
   enableHeartbeat: 1

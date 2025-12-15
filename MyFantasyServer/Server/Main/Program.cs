@@ -18,8 +18,7 @@ try
     // .NET 采用延迟加载机制 - 仅当类型被引用时才加载程序集
     // 通过访问 AssemblyMarker 强制加载程序集并调用 ModuleInitializer
     // 注意：Native AOT 不存在延迟加载问题，所有程序集在编译时打包
-    
-    BroadcastMessage.ListenClientDisConnect();
+    BroadcastMessage.Init();
     AssemblyHelper.Initialize();
     // 配置 NLog 日志基础设施
     var logger = new Fantasy.NLog("Server");

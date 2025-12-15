@@ -11,21 +11,22 @@ public class LoginRequestHandler : MessageRPC<LoginRequest,LoginResponse>
     {
         ClientData data = new ClientData{Name = request.name};
 
-        foreach (var client in BroadcastMessage.ClientDic.Values)
+        foreach (var client in BroadcastMessage.ClientHashSet)
         {
+            ClientObject clientObject = client.GetComponent<ClientObject>();
             session.Send(new CreatePlayrPrefabMessage{
-                id = client.ID,
-                CreatePosition = new Vector3_Position{x = client.Position.X, y = client.Position.Y, z = client.Position.Z}});
+                id = clientObject.ID,
+                CreatePosition = new Vector3_Position{x = clientObject.Position.X, y = clientObject.Position.Y, z = clientObject.Position.Z}});
         }
         
         BroadcastMessage.AddSession(session,data);
         Console.WriteLine($"玩家 {request.name} 加入世界");
-        response.id = BroadcastMessage.ClientIdNum;
+        response.id = session.GetComponent<ClientObject>().ID;
         response.isLogin = true;
         reply.Invoke();
         BroadcastMessage.Broadcast(new CreatePlayrPrefabMessage()
         {
-            id = BroadcastMessage.ClientIdNum,CreatePosition = new Vector3_Position(){x = 0, y = 1, z = 0},
+            id = response.id,CreatePosition = new Vector3_Position(){x = 0, y = 1, z = 0},
         },session);
         await FTask.CompletedTask;
     }

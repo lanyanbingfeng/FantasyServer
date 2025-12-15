@@ -1,0 +1,6 @@
+2025-12-15 12:04:03.8043  System.ArgumentException: An item with the same key has already been added. Key: 2
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at Hotfix.MessageHandler.BroadcastMessage.AddSession(Session session, ClientData data) in C:\Users\wzy\Desktop\FantasyServer\MyFantasyServer\Server\Hotfix\MessageHandler\BroadcastMessage.cs:line 35
+   at Hotfix.MessageHandler.LoginRequestHandler.Run(Session session, LoginRequest request, LoginResponse response, Action reply) in C:\Users\wzy\Desktop\FantasyServer\MyFantasyServer\Server\Hotfix\MessageHandler\LoginRequestHandler.cs:line 21
+   at Fantasy.Network.Interface.MessageRPC`2.Handle(Session session, UInt32 rpcId, Object message)
