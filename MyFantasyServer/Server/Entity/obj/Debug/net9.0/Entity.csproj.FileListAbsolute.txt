@@ -1,0 +1,14 @@
+C:\Users\ZhuanZ\Desktop\FantasyServer\MyFantasyServer\Server\Entity\bin\Debug\net9.0\Fantasy.config
+C:\Users\ZhuanZ\Desktop\FantasyServer\MyFantasyServer\Server\Entity\bin\Debug\net9.0\Fantasy.xsd
+C:\Users\ZhuanZ\Desktop\FantasyServer\MyFantasyServer\Server\Entity\bin\Debug\net9.0\Entity.deps.json
+C:\Users\ZhuanZ\Desktop\FantasyServer\MyFantasyServer\Server\Entity\bin\Debug\net9.0\Entity.dll
+C:\Users\ZhuanZ\Desktop\FantasyServer\MyFantasyServer\Server\Entity\bin\Debug\net9.0\Entity.pdb
+C:\Users\ZhuanZ\Desktop\FantasyServer\MyFantasyServer\Server\Entity\obj\Debug\net9.0\Entity.csproj.AssemblyReference.cache
+C:\Users\ZhuanZ\Desktop\FantasyServer\MyFantasyServer\Server\Entity\obj\Debug\net9.0\Entity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ZhuanZ\Desktop\FantasyServer\MyFantasyServer\Server\Entity\obj\Debug\net9.0\Entity.AssemblyInfoInputs.cache
+C:\Users\ZhuanZ\Desktop\FantasyServer\MyFantasyServer\Server\Entity\obj\Debug\net9.0\Entity.AssemblyInfo.cs
+C:\Users\ZhuanZ\Desktop\FantasyServer\MyFantasyServer\Server\Entity\obj\Debug\net9.0\Entity.csproj.CoreCompileInputs.cache
+C:\Users\ZhuanZ\Desktop\FantasyServer\MyFantasyServer\Server\Entity\obj\Debug\net9.0\Entity.dll
+C:\Users\ZhuanZ\Desktop\FantasyServer\MyFantasyServer\Server\Entity\obj\Debug\net9.0\refint\Entity.dll
+C:\Users\ZhuanZ\Desktop\FantasyServer\MyFantasyServer\Server\Entity\obj\Debug\net9.0\Entity.pdb
+C:\Users\ZhuanZ\Desktop\FantasyServer\MyFantasyServer\Server\Entity\obj\Debug\net9.0\ref\Entity.dll
